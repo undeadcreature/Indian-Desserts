@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Dosis:wght@200;300;400;500&family=Lobster+Two&family=Poppins:wght@700&family=Tiro+Devanagari+Hindi&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: dosis;
+}
+
+body {
+    height: auto;
+    background: linear-gradient(141deg, #110101 0%, rgb(98, 7, 7) 51%, #8e0c05 75%);
+}
+
+.section-main {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.492), rgba(0, 0, 0, 0.666)), url(desserts\ \(2\).jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    padding: 20px 100px;
+}
+
+.section-main h1 {
+    position: absolute;
+    color: #fff;
+    text-shadow: 10px 10px 25px #000000;
+    font-size: 80px;
+    font-weight: 550;
+    letter-spacing: 4px;
+    top: 48%;
+    left: 25%;
+    line-height: 60px;
+    font-family: lobster two;
+    animation: fadeIn 3s;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.section-main p {
+    color: chocolate;
+    position: absolute;
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    top: 65%;
+    left: 15%;
+    font-family: dosis;
+    animation: fadeIn 3s;
+
+}
+
+header {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px 100px;
+    transition: 0.6s;
+}
+
+header.sticky {
+    background: #000;
+    color: #fff;
+    padding: 15px 100px;
+
+}
+
+header .brand {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 200;
+    text-transform: uppercase;
+    text-decoration: none;
+    word-spacing: 3px;
+    font-family: verdana;
+    text-shadow: 10px 10px 25px #000;
+
+}
+
+header.menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .menu a {
+    font-size: 28px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+    margin: 0 30px;
+    padding: 0 10px;
+
+    transition: 0.3s;
+    transition-property: color, background;
+}
+
+header .menu a:hover {
+    color: #000;
+    background: #fff;
+}
+
+header .btn {
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+@media (max-width: 480px){
+    .section-main{
+        padding: 0%;
+        width: 466px;
+    }
+    .section-main h1 {
+        top: 30%;
+        left: 10%;
+        font-size: 70px;
+        line-height: 80px;
+        display: inline;
+    }
+    .section-main p {
+        left: 10%;
+        right: 0;
+        top: 60%;
+        line-height: 30px;
+        font-size: 30px;
+
+    }
+    #aboutcontent {
+        font-size: 8px;
+        font-weight: 200;
+        margin-right: 0;
+        width: 466px;
+    }
+    .footer{
+        font-size: 2px;
+        width: 428px;
+     }
+    .footer .social .con{
+        padding-bottom: 9px;
+    }
+    hr{
+        width: 458px;
+    }
+  
+}
+
+@media (max-width: 1060px) {
+    header .btn {
+        display: block;
+    }
+
+    header .menu {
+        position: fixed;
+        background: #000;
+        display: flex;
+        flex-direction: column;
+        min-width: 200px;
+        height: 100vh;
+        top: 0;
+        right: -100%;
+        padding: 80px 50px;
+    }
+
+    header .menu.active {
+        right: 0;
+    }
+
+    header .menu .close-btn {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 25px;
+    }
+
+    header .menu a {
+        display: block;
+        font-size: 25px;
+        margin: 20px;
+        padding: 0 15px;
+    }
+
+    header .brand {
+        font-size: 30px;
+
+    }
+    
+    .section-main h1 {
+        top: 30%;
+        left: 10%;
+        font-size: 70px;
+        line-height: 80px;
+        display: inline;
+
+    }
+    
+
+    .section-main p {
+        left: 10%;
+        right: 0;
+        top: 60%;
+        line-height: 30px;
+        font-size: 30px;
+
+    }
+
+    #aboutcontent {
+        font-size: 10px;
+        font-weight: 200;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+}
+
+/************************CONTENT OF THE FILEkt............********************************/
+#aboutcontent {
+    color: #fff;
+    text-align: center;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    font-size: 40px;
+    font-weight: 300;
+    font-family: dosis;
+    border: 1px solid white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+/*************************************************************/
+.container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    box-sizing: border-box;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: fit-content;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+
+}
+
+img {
+    height: 500px;
+    width: 450px;
+    padding-left: 15%;
+}
+
+.content {
+
+    font-size: 25px;
+    padding-left: 120px;
+    max-width: none;
+    color: #fff;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.content .name {
+    font-size: 32px;
+    font-weight: 300;
+}
+
+@media(max-width: 1100px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    img {
+        max-width: 500px;
+        height: 500px;
+        display: flex;
+        margin: none;
+        padding-right: 20px;
+        padding-left: 0;
+    }
+
+    .content {
+        font-size: 18px;
+        flex: 1;
+        padding: 18px 18px 18px 18px;
+        line-height: 20px;
+        width: auto;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+
+    .content .name {
+        font-size: 20px;
+    }
+}
+
+.footer {
+    max-width: 1200px;
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    gap: 1rem;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  
+}
+.footer .address{
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+    margin-left: 15%;
+}
+.footer .social {
+    text-align: center;
+     color: white;
+}
+
+.footer .social a {
+    font-size: 30px;
+    color: inherit;
+    border: 1px solid white;
+    width: 60px;
+    height: 60px;
+    line-height: 50px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 10px;
+    opacity: 0.75;
+}
+
+.footer .social a:hover {
+    opacity: 0.9;
+}
+@media(max-width: 1100px){
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer .social{
+        padding-top: 60px;
+    }
+    .footer .address{
+        padding-right: 10px;
+    }
+
+}
